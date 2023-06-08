@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    background-color:#0089b7;
+    color: white;
+    align-items: center;
+    height: 70px;
+}
+.navbar h2{
+    font-size:30px;
+    font-weight: 900;
+    margin-left: 115px;
+    font-family: sans-serif;
+}
+.link{
+    margin-left:800px;
+}
+.link a{
+    color: white;
+    align-items: center;
+     padding: 15px;
+     text-decoration: none;
+     font-size: 25px;
+     font-weight: 480;
+}
+.link a:hover{
+    border-bottom:6px solid  yellow;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.navbar h2:hover{
+    border-bottom:6px solid  yellow;
+    transition: 0.3s ease-in-out;
+}
+#hero{
+    background-color:#003d62;
+    border-bottom: 10px solid #0089b7;
+}
+.image-container{
+    padding: 40px;
+    margin-left: 60px;
+}
+#hero .hero-content{
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+.hero-text h1{
+    font-size: 35px;
+    font-weight:300;
+}
+.hii-text{
+    font-size: 60px;
+    font-weight: bold;
+    color: yellow;
+}
+.name-text{
+    font-size: 50px;
+    font-weight:300;
+}
+.hero-text h2{
+    font-size: 45px;
+    font-weight:bold;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  } 
+
+.hero-text{
+    margin-left: 100px;
+}
+
+/* project section */
+#project {
+    background-color: #003d62;
+    color: white;
+    margin-top: 20px;
+    border-bottom: 10px solid #0089b7;
+  }
+  
+  #project h2 {
+    font-size: 60px;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .project_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap:70px;
+    
+  }
+  .container{
+    margin-top: 20px;
+  }
+  .grid_item {
+    display: grid;
+    place-items: center;
+    
+  }
+  
+  .card {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    border-radius:5px;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+  }
+  .card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+  }
+  .card:hover .card_content {
+    background: white;
+    color: #003d62;
+    transform: translateY(4px);
+  }
+  
+  .card_content {
+    padding: 20px;
+    position: relative;
+    top: -65px;
+    margin-bottom: -65px;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+  }
+  .card_content h3 {
+    text-align: center;
+    font-size: 25px;
+  }
+  #project a{
+    text-decoration: none;
+    
+  }
+
+
+  /* Contact Section */
+
+
+  #contact {
+    background:#003d62;
+    color: white;
+    border-bottom: 10px solid #0089b7;
+  }
+  
+  #contact h2 {
+    font-size: 60px;
+    text-align: center;
+    margin: 2px 0;
+  }
+  
+  #contact .container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+  }
+  
+  .top_contact {
+    max-width: 800px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .contact_way {
+    display: flex;
+    gap:10px;
+    align-items: center;
+  }
+  
+  .contact_way i {
+    font-size: 30px;
+  }
+  .contact_way h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .bottom_contact {
+    max-width: 400px;
+    gap: 10px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  #contact a{
+    text-decoration: none;
+    color: white;
+  }
+  #contact a:hover{
+    border-bottom:5px solid  yellow;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background: #021e30;
+    padding: 20px;
+    color: white;
+    font-size:25px;
+    text-align: center;
+  }
